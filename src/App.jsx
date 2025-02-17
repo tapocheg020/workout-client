@@ -1,6 +1,6 @@
 import './App.css'
 
-function App() {
+const App = () => {
 	return (
 		<>
 			<div></div>
@@ -10,4 +10,4 @@ function App() {
 
 export default App
 
-//TODO: LESSON 4   3:03
+//TODO: LESSON 5  0:00
