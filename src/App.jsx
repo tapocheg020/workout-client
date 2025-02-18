@@ -1,13 +1,8 @@
-import './App.css'
-
+import Layout from './components/layout/Layout'
 const App = () => {
-	return (
-		<>
-			<div></div>
-		</>
-	)
+	return <Layout />
 }
 
 export default App
 
-//TODO: LESSON 5  0:00
+//TODO: LESSON 6  0:00
