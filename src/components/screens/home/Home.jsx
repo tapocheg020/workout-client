@@ -1,8 +1,8 @@
 import Layout from './components/layout/Layout'
-const App = () => {
+const Home = () => {
 	return <Layout />
 }
 
-export default App
+export default Home
 
 //TODO: LESSON 6  0:00

@@ -22,7 +22,7 @@ const Menu = ({ isShow }) => {
 					)
 				})}
 				<li>
-					<button onClick={logoutHandle}>Logout</button>
+					<button className={styles.logout} onClick={logoutHandle}>Logout</button>
 				</li>
 			</ul>
 		</nav>

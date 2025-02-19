@@ -4,11 +4,18 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding-top: 10px;
 
 	button {
 		background-color: transparent;
 		border: none;
 		outline: none;
 		cursor: pointer;
+
+		font-size: 30px;
+
+		> svg > path {
+			fill: #fff;
+		}
 	}
 }

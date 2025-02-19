@@ -10,7 +10,7 @@ const Header = () => {
 	return (
 		<header className={styles.header}>
 			<button onClick={() => {}}>
-				<CgArrowLeft color='white' />
+				<CgArrowLeft className={styles.buttonSvgLeft} color='white' />
 			</button>
 			{/* User Profile */}
 			<Hamburger />

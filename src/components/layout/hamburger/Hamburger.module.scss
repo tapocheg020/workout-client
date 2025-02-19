@@ -4,11 +4,20 @@
 .wrapper {
 	position: relative;
 
-	button {
+	.logout {
 		background-color: transparent;
 		border: none;
 		outline: none;
 		cursor: pointer;
+		font-size: 18px;
+	}
+
+	button {
+		font-size: 30px;
+
+		> svg > path {
+			fill: #fff;
+		}
 	}
 
 	.menu {
