@@ -26,7 +26,7 @@
 		right: 0;
 		background-color: #fff;
 		padding: 10px 12px;
-		font-style: 14px;
+		font-size: 18px;
 		box-shadow: $bx-16;
 		border-radius: 10px 0px 10px 10px;
 		min-width: 116px;
@@ -49,6 +49,20 @@
 					color: $accent;
 					margin: 4px 0;
 				}
+			}
+
+			li {
+				font-size: 18px;
+				width: 105px;
+				font-family: $default-font;
+			}
+
+			button {
+				font-family: $default-font;
+				color: #000;
+				text-decoration: none;
+				transition: color 0.2s ease;
+				font-family: $default-font;
 			}
 		}
 	}

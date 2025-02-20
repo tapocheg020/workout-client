@@ -1,18 +1,35 @@
+/* eslint-disable react/prop-types */
 import styles from './Header.module.scss'
 import { useAuth } from './../../../hooks/useAuth'
 import { CgArrowLeft } from 'react-icons/cg'
+import { HiUserCircle } from "react-icons/hi2";
 import Hamburger from './../hamburger/Hamburger'
-
-const Header = () => {
+import { useLocation, useNavigate } from 'react-router-dom'
+const Header = ({ backLink = '' }) => {
 	// eslint-disable-next-line no-unused-vars
 	const { isAuth } = useAuth()
+	const location = useLocation()
+	const navigate = useNavigate()
 
 	return (
 		<header className={styles.header}>
-			<button onClick={() => {}}>
-				<CgArrowLeft className={styles.buttonSvgLeft} color='white' />
-			</button>
-			{/* User Profile */}
+			{location.pathname !== '/' ? (
+				<button
+					onClick={() => {
+						navigate(backLink)
+					}}
+				>
+					<CgArrowLeft className={styles.buttonSvgLeft} color='white' />
+				</button>
+			) : (
+				<button
+					onClick={() => {
+						navigate(backLink)
+					}}
+				>
+					<HiUserCircle  className={styles.buttonSvgLeft} color='white' />
+				</button>
+			)}
 			<Hamburger />
 		</header>
 	)

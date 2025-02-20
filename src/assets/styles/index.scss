@@ -15,6 +15,8 @@
 	&:focus {
 		outline: none;
 	}
+
+	font-family: $default-font;
 }
 
 *::-webkit-input-placeholder {
@@ -47,7 +49,7 @@ body {
 	padding: 0;
 	margin: 0;
 	color: #fff;
-	font-size: 18px;
+	font-size: 20px;
 	min-width: 320px;
 	position: relative;
 	line-height: 1.65;
@@ -67,4 +69,34 @@ img {
 
 #root {
 	height: 100%;
+}
+.dark-link {
+	text-align: right;
+	width: 100%;
+	display: block;
+	margin-bottom: 0.5rem;
+	text-decoration: none;
+	color: $accent;
+	transition: color 0.3s ease-in-out;
+	&:hover {
+		color: darken($accent, 5%);
+	}
+}
+
+.wrapper-inner-page {
+	padding: 40px 30px;
+	text-align: center;
+	max-width: 560px;
+	width: 100%;
+	margin: 0;
+}
+
+input::-webkit-outer-spring-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
 }
