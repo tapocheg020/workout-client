@@ -15,7 +15,9 @@
 	button {
 		font-size: 30px;
 
-		> svg > path {
+		> svg {
+			animation: opacity 0.4s ease-in-out;
+		} > path {
 			fill: #fff;
 		}
 	}

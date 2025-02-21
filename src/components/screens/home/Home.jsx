@@ -1,6 +1,6 @@
 import Layout from '/src/components/layout/Layout'
 const Home = () => {
-	return <Layout />
+	return <Layout bgImage='/images/home-bg.jpg' />
 }
 
 export default Home

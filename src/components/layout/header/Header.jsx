@@ -24,7 +24,7 @@ const Header = ({ backLink = '' }) => {
 			) : (
 				<button
 					onClick={() => {
-						navigate(backLink)
+						navigate('/profile')
 					}}
 				>
 					<HiUserCircle  className={styles.buttonSvgLeft} color='white' />
